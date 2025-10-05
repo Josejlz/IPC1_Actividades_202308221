@@ -27,7 +27,7 @@ public class NumberInput extends BaseView {
                 
                 String opRes =this.controller.doOp(option);
                 
-                if (stringIsInt(opRes)) {
+                if (stringIsInt(opRes)||stringIsDouble(opRes)) {
                     showMsg("El resultado de la operación fué de " + opRes, this.controller.getCurrUser());
                 } else{
                     errorMsg("Hubo un error al calcular la operación");

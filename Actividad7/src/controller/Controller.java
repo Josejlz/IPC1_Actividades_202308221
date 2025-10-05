@@ -79,6 +79,4 @@ public class Controller {
        return this.model.doOp(option);
    }
     
-    
-    
 }

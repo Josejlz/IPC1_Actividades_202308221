@@ -26,11 +26,7 @@ public class BaseView extends javax.swing.JFrame {
     
     protected void errorMsg(String str){
         JOptionPane.showMessageDialog(null, str, "Error!", JOptionPane.ERROR_MESSAGE);
-    }
-    
-    
-    
-    
+    } 
     protected  boolean stringIsEmpty(String str){
         if (str.isBlank()||str.isEmpty()) {
             return true;
@@ -42,6 +38,15 @@ public class BaseView extends javax.swing.JFrame {
     protected boolean stringIsInt(String str){
         try{
             Integer.parseInt(str);
+            return true;
+        }catch(NumberFormatException e){
+            return false;
+        }
+    }
+    
+    protected boolean stringIsDouble(String str){
+        try{
+            Double.parseDouble(str);
             return true;
         }catch(NumberFormatException e){
             return false;

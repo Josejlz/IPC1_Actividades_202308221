@@ -18,9 +18,6 @@ public class User {
         this.num1 = 0;
         this.num2 = 0;
     }
-    
-    
-
     public String getName() {
         return name;
     }
